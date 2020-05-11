@@ -12,30 +12,32 @@
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Pacifico&family=Permanent+Marker&family=Roboto+Slab&family=Satisfy&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Amiri:ital@0;1&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
 </head>
 <body>
 	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-  $(window).scroll(function() {
-    var scrollPos = $(window).scrollTop(),
-        navbar = $('topnav');
+				function myFunction() {
+		  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
 
-    if (scrollPos > 1000) {
-      topnav.addClass('alt-color');
-    } else {
-      topnav.removeClass('alt-color');
-    }
-  });
-});
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
 	</script>
  <div class=".main">
  	<div class="topnav" align="right">
 <a href="index.html" class= "current"> Home </a>
-<a href="#about"> COVID-19 </a>
-<a href="app.html"> Before </a>
-<a href='#'> During </a>
-<a href="#"> Course </a>
-<a href="#"> After </a>
+<a href="#"> Pandemic </a>
+
 <a href="#"> Thank You ! </a>
   </div>
  	<div class="img_1">
@@ -48,12 +50,77 @@
  			<td> <img src="img_2_edited-removebg-preview.png" width=500 height=500></td>
  			<td>
  				<p class="text_1"> 
- 					2020 or 404 year error has started off with a crisis after a crisis with the biggest crisis being the Corona-virus pandemic. Scientists , Virologists and Biologists are struggling to find a cure or a vaccine. WHO predicts that a vaccine will not be discovered and distributed to the masses before <emp>2021</emp> while some scientists at Harvard believe that Social Distancing measures might have to be in place in till 2022. With most of the countries have confirmed cases and a third of the world's population is under a lockdown , it is necessary that we keep our sanity both mentally and physically. This will ensure that we don't break off from civilization and<emp> return to normal life as soon as possible. </emp>
+ 					2020 or 404 year error has started off with a crisis after a crisis with the biggest crisis being the Corona-virus pandemic. Scientists , Virologists and Biologists are struggling to find a cure or a vaccine. WHO predicts that a vaccine will not be discovered <span id="dots">..... </span><span id="more">and distributed to the masses before <emp>2021</emp> while some scientists at Harvard believe that Social Distancing measures might have to be in place in till 2022. With most of the countries have confirmed cases and a third of the world's population is under a lockdown , it is necessary that we keep our sanity both mentally and physically. This will ensure that we don't break off from civilization and<emp> return to normal life as soon as possible. </emp></span>
  				</p>
+ 				<button onclick="myFunction()" id="myBtn">Read more</button>
  			</td>
  		</tr>
  	</table>
-</div><div class="intro_2">
+</div>
+<div class="health">
+<h1 class="head1"><center> About COVID-19</center></h1>
+<table style="margin-left: 25px;"><tr>
+<td><h3 class="head2">What is COVID-19 ? </h3><br>
+	<p>COVID-19 is a disease caused by the Novel Corona Virus. Its symptoms (like the Flu) include : 
+	<ul>
+		<li> Fever </li>
+		<li>Dry Cough </li>
+		<li> Breathing Difficulty </li>
+		<li> Sometimes , Aches, Pains, runny nose , nasal congestion </li>
+	</ul></p></td></tr><tr>
+<td><h3 class="head2"> How does it spread ? </h3><br>
+<p>COVID-19 spreads mainly by droplets produced
+as a result of coughing or sneezing of a COVID-19
+infected person.This can happen in 2 ways :
+<ul>
+<li><b> Direct Contact: </b> Standing within 1 meter of an infected person especially if they do not cover their mouth while sneezing or coughing </li>
+<li><b> Indirect Contact: </b> The virus can survive on surfaces for few days. Touching these surfaces and then touching one's face </li>
+</ul>
+</p></td></tr>
+<tr><td>
+<h3 class="head2"> How lethal is COVID-19 ? </h3><br>
+<p> About 80% patients recover from COVID-19. One in 6 patients can become seriously ill and/or develop pneumonia , at worst.<br> However, this is mostly the cases in adult over the age of 60 years or those with medical problems like High Blood Problems , respiratory diseases/ asthma , cancer or diabetes.
+</td></tr>
+<tr><td>
+	<h3 class='head2'> How to avoid getting COVID-19 or spreading it ? </h3><br>
+	<p>
+	<ol>
+		<li> Practice Social Distancing </li>
+		<ol type="a">
+			<li><b>Avoid gatherings</b>such as melas, haats, gatherings in religious places, social
+functions etc.</li>
+<li>Maintain a safe distance of at least one Metre between you and other people
+when in public places,<br> especially if they are having symptoms such as cough,
+fever etc. to avoid direct droplet contact.</li>
+<li> Stay at home as much as possible. More about it down below ! </li>
+<li> <b>Avoid physical contact </b> like handshakes, hand holding or hugs.</li>
+<li> Avoid touching surfaces such as table tops, chairs, door handles etc.</li>
+		</ol>
+		<li> Practice Good Hygiene </li>
+		<ol type="a">
+			<li><b> Wash your hands </b>with soap and water or an alcohol based sanitizer </li>
+			<ol type="i">
+				<li>After coming home from outside or meeting other people especially if
+they are ill.</li>
+<li> After having touched your face, coughing or sneezing.</li>
+<li> Before preparing food, eating or feeding children.</li>
+<li> Before and after using toilet, cleaning etc. </li>
+			</ol>
+			<li>While coughing or sneezing cover your nose and mouth with handkerchief.
+Wash the handkerchief at least daily</li>
+<li> It is preferable to cough/sneeze into your bent elbow rather than your
+palms. </li>
+		</ol>
+
+	</ol>
+</p></td>
+<td>
+	<img src="img_8.jpg" height=500 width=700>
+</td>
+</tr>
+</table>
+</div>
+<div class="intro_2">
 <h1 class="head1"><center> How to prepare for the Lockdown </center></h1>
 
 	<div class="intro_2"><table>
@@ -63,22 +130,24 @@
 		<p class="qute"><i> "It is better to be a warrior in a garden than to be a gardener in the War"</p></i>
 		<p class="text_2"> 
 		 	It is always better to prepare for the worst , which in this case , is the lock-down. Even if the lockdown has started the following steps can still be carried out. <blockquote cite="https://foreignpolicy.com/2020/ 02/25/coronavirus-lockdown-prepare-quarantine/"> <dl>
-		 		<dt>1. Prepare the Essentials </dt>
-		 			<dd> Stock up on masks , sanitizers , gloves and medicines.</dd>
-					<dd> Stock up on at least an 3 weeks of non-perishable food especially canned ones like soup</dd>
-					<dd> Water is also critical so stock up on some bottled water of you live in a place which does not have water supply </dd>
-					<dd><b> Remember not to hoard any essential item </b></dd>
+		 	<ul>	<dt>1. Prepare the Essentials </dt>
+		 	
+					<dd><li> Stock up on masks , sanitizers , gloves and medicines. </li></dd>
+					<li><dd> Stock up on at least an 3 weeks of non-perishable food especially canned ones like soup</dd></li>
+					<li><dd> Water is also critical so stock up on some bottled water if you live in areas with shortages </dd></li>
+					<li><dd><b> Remember not to hoard any essential item </b></dd></li>
 				<dt> 2.Stock up on non - essentials </dt>
-					<dd> Remember to stock up on times like toilet paper , shampoo , soap </dd>
-					<dd> Also stock up on small snacks like chocolate, candy , namkeeen </dd>
+					<li><dd> Remember to stock up on times like toilet paper , shampoo , soap </dd></li>
+					<li><dd> Also stock up on small snacks like chocolate, candy , namkeeen </dd></li>
 				<dt>3. Stay Home even without a lockdown in place  </dt>
-					<dd> In many parts of the world people were caught out of place , stranded for weeks on end.</dd>
-					<dd> Minimize on non-essential travel especially to public places </dd>
-					<dd> Don't leave your district/state/country. </dd>
+					<li><dd> In many parts of the world people were caught out of place , stranded for weeks on end.</dd></li>
+					<li><dd> Minimize on non-essential travel especially to public places </dd></li>
+					<li><dd> Don't leave your district/state/country. </dd></li>
 				<dt> 4.Prepare Financially </dt> 
-					<dd> Many bushiness laid off worker or docked their pay. To prepare for this then try to minimize you expense. Stop eating out at restaurants or shopping. </dd>
-					<dD> Try saving as much money as possible and don't invest new money as markets around the world are collapsing ! However , don't sell all your stocks as that is detrimental for the economy on the large </dD>
-		 			</dl>
+					<li><dd>Minimize your expenses </dd></li>
+					<li>
+					<dD> Save for the worser times and minimize your investments. </dD></li>
+		 			</ul></dl>
 		 	 </blockquote> 
 		</p></td>
 	</tr></table>
@@ -117,7 +186,7 @@
 		<dl style="sqaure">
 			<dt> General </dt>	
 					<dd> Sites like Udemy ,Coursera, SkillShare & Brilliant  have courses relating to aspects of life</dd>
-					<dd> Harvard has made 50 of its courses free for all relating to Medicine , Arts , Business , CS </dd>
+					<dd><a href="https://online-learning.harvard.edu/catalog?keywords=&paid%5B1%5D=1&max_price=&start_date_range%5Bmin%5D%5Bdate%5D=&start_date_range%5Bmax%5D%5Bdate%5D=" class="sites">Harvard</a> has made 50 of its courses free for all relating to Medicine , Arts , Business , CS </dd>
 			<dt> For Students </dt>
 			<dd> Khan Academy has material relating to most academic subjects as well as tests like SAT , IIT-JEE </dd>
 			<dd> All material on Bjyu's and Vedantu is free to use until May end </dd>
