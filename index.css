@@ -132,3 +132,6 @@ dt {
 p {
 	font-family: "Lora", serif;
 }
+.text_4 {
+	  background: linear-gradient(to top left, #ff6666 53%, #ffff99 100%);
+}
