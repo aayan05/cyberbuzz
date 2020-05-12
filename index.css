@@ -215,3 +215,13 @@ div.container {
   display: none;
 }
 
+.text_7 {
+	background: linear-gradient(to top left, #3333ff 0%, #66ccff 100%);
+}
+.hov5 {
+	transition: width 4s, height 4s;
+}
+.hov5:hover{
+	width:400px;
+	height:400px;
+}
