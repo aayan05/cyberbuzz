@@ -73,6 +73,33 @@ background: black;
   	color: black;
     }
 
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+    color: #ffff1a;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s infinite normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
    
  .head1 {
  	font-family: "Permanent Marker" , cursive;
@@ -134,4 +161,39 @@ p {
 }
 .text_4 {
 	  background: linear-gradient(to right, #00cc99 53%, #0066ff 102%)
+}
+.text_5 {
+	background: linear-gradient(to right, #00cc99 53%, #ffff99 102%);
+}
+
+#hov {
+	transition: width 4s, height 4s;
+	width:500px;
+	height:500px;
+}
+#hov:hover{
+	width:700px;
+	height: 500px;
+}
+#hov2 {
+	transition: width 4s, height 4s;
+}
+#hov2:hover {
+	width:600px;
+	height:600px;
+}
+#hov3{
+	transition: width 4s, height 4s;
+}
+#hov3:hover {
+	width: 550px;
+	height: 650px;
+}
+#hov4 {
+	transition: width 3s , height 3s, transform 3s;
+}
+#hov4:hover {
+	width:700px;
+	height:700px;
+	transform: rotate(360deg);
 }
