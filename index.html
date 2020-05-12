@@ -33,7 +33,37 @@
     moreText.style.display = "inline";
   }
 }
+	function myFunction2() {
+		  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
 
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+
+function myFunction3() {
+		  var dots = document.getElementById("dots3");
+  var moreText = document.getElementById("more3");
+  var btnText = document.getElementById("myBtn3");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
 	</script>
  <div class=".main">
  	<div class="topnav" align="right">
@@ -71,11 +101,11 @@
 		<li> Sometimes , Aches, Pains, runny nose , nasal congestion </li>
 	</ul></p></td>
 <td style='padding-left: 75px;'>
-	<img src="img_9.jpg" width=300 height=200 align="center">
+	<img src="img_9.jpg" width=300 height=200 align="center" style="border-radius: 50%">
 </td>
 </tr><tr>
 <td><h3 class="head2"> How does it spread ? </h3><br>
-<p>COVID-19 spreads mainly by droplets produced
+<p>COVID-19 spreads mainly by droplets produced (Hover on the image on the right)
 as a result of coughing or sneezing of a COVID-19
 infected person.This can happen in 2 ways :
 <ul>
@@ -106,6 +136,7 @@ fever etc. to avoid direct droplet contact.</li>
 <li> <b>Avoid physical contact </b> like handshakes, hand holding or hugs.</li>
 <li> Avoid touching surfaces such as table tops, chairs, door handles etc.</li>
 		</ol>
+		<span id="dots3">......</span><span id="more3">
 		<li> Practice Good Hygiene </li>
 		<ol type="a">
 			<li><b> Wash your hands </b>with soap and water or an alcohol based sanitizer </li>
@@ -125,7 +156,8 @@ palms. </li>
 <li> Ensure that the surfaces and objects are regularly cleaned.</li>
 		</ol>
 
-	</ol>
+	</ol></span>
+	<button onclick="myFunction3()" id="myBtn3">Read more</button></td>
 </p></td>
 <td>
 	<img src="img_8.jpg" height=200 width=200 id="hov">
@@ -273,16 +305,17 @@ Welfare’s 24X7 helpline at 1075 or 011-23978046.</li>
 <tr><td style="padding-right: 100px;"><a href="https://www.worldometers.info/coronavirus/" target="_blank" class="sites">
 	<img src="img_15.jpg" width=500 height=500 id="hov4"><br>
 	<h4 class="head2"> COVID-19 Cases Tracker </h4></a></td>
-	<td style="padding-left:100px;"><a href="https://www.worldometers.info/coronavirus/" target="_blank" class="sites">
+	<td style="padding-left:100px;"><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank" class="sites">
 		<img src="img_16.png" width="500" height=500><br>
-		<h4 class="head2"> WHO official website on COVID-19</h4></a></td></tr>
+		<h4 class="head2"><abbr title="World Health Organization"> WHO official website on COVID-19 </abbr></h4></a></td></tr>
 		<TR><td>
 			<a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank" class="sites">
 				<img src="img_17.jpg" width=500 height=500><br>
-				<h4 class="head2"> CDC official website on COVID-19</h4></a></td>
+				<h4 class="head2"><abbr title="Center for Disease Control
+					(US)"> CDC </abbr> official website on COVID-19</h4></a></td>
 				<td><a href="https://www.mohfw.gov.in/" target="_blank" class="sites">
 					<img src="img_18.png" width=500 height=500><br>
-					<h4 class="head2">MoFHW official website </h4></a></td></TR>
+					<h4 class="head2"> <abbr title="Ministry of Health and Family Welfare">MoHFW</abbr> official website </h4></a></td></TR>
 		<tr><td>
 			<iframe width="560" height="315" src="https://www.youtube.com/embed/wh-sRmTWGTw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
 			<h4 class="head2">
@@ -295,7 +328,40 @@ Muskurayega India | Official Video |</h4></td><td>
 				<h4 class="head2">PIB India YT channel </h4></a></td></tr></table><br></div>
 <div class="text_5">
 <h1 class="head1"><CENTER> Donations </CENTER></h1>
+<table>
+	<tr>
+		<td><div class="polaroid"><a href="https://patreon.com" target="_blank" class="sites">
+  <img src="img_21.png" alt="5 Terre" height="500" width="500" style="border-radius: 80%;">
+  <div class="container">
+  <p> Donate to our relief fund !</p>
+  </div>
+</a></div>
+</td><td style="padding-left: 50px;">
+	<h3 class="head2"> Donate to the following funds :-</h3>
+	<ol>
+	<li><a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/donate" target="_blank" class="sites"><h4 class="head2"> WHO COVID-19 Response Fund  </h4></a></li>
+	<li><a href="https://www.pmcares.gov.in/en/" target="_blank" class="sites"><h4 class="head2">PMCARES Fund (IND)</h4> </a></li>
+	<li> <a href="https://pmnrf.gov.in/en/" target="_blank" class="sites"><h4 class="head2"> PM National Relief Fund </h4></a></li>
+	<li><a href="https://www.cdcfoundation.org/emergencyresponse" target="_blank" class="sites"><h4 class="head2"> CDC Foundation Emergency Response Fund </h4></a></li>
+	<li><a href="https://www.msf.org/donate" target="_blank" class="sites"><h4 class="head2"><abbr title="Medicines Sans Frontiers (Doctors Without Borders)"> MSF </abbr> Response Fund </h4></a></li>
+	<li><a href="https://www.unicef.org/coronavirus/covid-19/donate" target="_blank" class="sites"><h4 class="head2"><abbr title="United Nations Children's Fund">UNICEF </abbr> COVID-19 Emergency Response Fund </h4></a></li>
+	</ol>
+	</td>
+	</tr>
+</table>
+</div>
+<div class="text_6">
+<h1 class="head1"><center> Thank You ! </center></h1><br>
+<table>
+	<tr>
+		<td><img src="img_22.png" width=600 height=500 style="border-radius: 80%"></td>
+		<td><font class="qute"><i> "I can no other answer make but thanks, and thanks, and ever thanks" </i></font><br>
+			<p>Our entire team would like to thank superheroes of this crisis. They neither wear capes nor have got their powers from radiation. They have studied hard and earned a white coat. There are some who wear a uniform while others are in regular clothing. They stay outside so that we<span id="dots2">...</span><span id="more2"> can stay safe  inside. They put their lives at stake so that no harm comes to our family. They are doctors, policemen, sanitary workers , IT technicians , Telecom operators and many more !. Saying Thanks to them isn't enough to pay them back them for their meritorious and selfles sevice to the world . They are the real heroes! Our entire team salutes their bravery and dedication to their work and  thanks these heroes from the bottom of our hearts!</span></p>
 
+<button onclick="myFunction2()" id="myBtn2">Read more</button></td>
+
+	</tr>
+</table>
 </div>
 </div>
  </div>

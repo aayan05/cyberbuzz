@@ -90,7 +90,7 @@ background: black;
 /* Animation */
 .anim-typewriter{
   animation: typewriter 4s steps(44) 1s infinite normal both,
-             blinkTextCursor 500ms steps(44) infinite normal;
+             blinkTextCursor 500ms steps(1) infinite normal;
 }
 @keyframes typewriter{
   from{width: 0;}
@@ -163,7 +163,7 @@ p {
 	  background: linear-gradient(to right, #00cc99 53%, #0066ff 102%)
 }
 .text_5 {
-	background: linear-gradient(to right, #00cc99 53%, #ffff99 102%);
+	   background: linear-gradient(to right, #66ffcc 0%, #ffff66 69%);
 }
 
 #hov {
@@ -197,3 +197,21 @@ p {
 	height:700px;
 	transform: rotate(360deg);
 }
+div.polaroid {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.text_6 {
+	 background: linear-gradient(to right, #ff99cc 0%, #cc99ff 100%);
+}
+#more2 #more3 #more {
+  display: none;
+}
+
