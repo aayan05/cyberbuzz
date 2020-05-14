@@ -159,6 +159,9 @@ dt {
 p {
 	font-family: "Lora", serif;
 }
+div {
+	width:100%;
+}
 .text_4 {
 	  background: linear-gradient(to right, #00cc99 53%, #0066ff 102%)
 }
